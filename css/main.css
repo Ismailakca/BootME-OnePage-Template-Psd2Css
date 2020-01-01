@@ -1,0 +1,263 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css";
+h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+h2{
+    color: #1886C7;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+P{
+    font-size: 14px;
+}
+body{
+    font-family: 'Roboto' ,sans-serif;
+}
+.navbar{
+    border-bottom: 1px solid #1886C7;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.navbar .navbar-brand{
+    color: #1886C7 ;
+    font-size: 24px;
+}
+.bg-dark{
+    background: rgba(0, 0, 0, 1) ;
+}
+
+.navbar .nav-item .nav-link{
+    color: rgba(255, 255, 255, .9);
+    text-transform: uppercase;
+    transition: .5s color;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #1886C7;
+}
+#headerSection{
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+#headerSection .overlay{
+    background-color: rgba(0, 0, 0, .7);
+}
+#headerSection .row{
+    height: 100vh;
+}
+.btn-outline-primary {
+    padding-left: 30px;
+    padding-right:30px;
+    border-radius: 0px;
+}
+
+#feautures .fas, #feautures .fab{
+    font-size: 40px;
+}
+.feauture-top{
+    transition: .5s color;
+}
+.feauture-top:hover{
+    color: #1886C7;
+    cursor: pointer;
+}
+#ourHistory img{
+    border-radius: 4px;
+}
+
+#ourHistory h2{
+    border-left: 6px solid #1886C7;
+    padding-left: 30px;
+}
+#ourHistory .col-md-6 {
+    display: inline;
+}
+#ourHistory .btn-outline-primary {
+    position: absolute;
+    bottom: 0;
+}
+#ourHistory p{
+    line-height: 28px;
+}
+#team .card{
+    border: none;
+    opacity: .5;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+#team .card:hover{
+    opacity: 1;
+}
+#team .fab{
+    font-size: 24px;
+}
+#whatwedo{
+   background: linear-gradient(
+   rgba(0,0,0,.7),
+   rgba(0,0,0,.7)
+   ),
+   url(../img/modalbg.jpg);
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#whatwedo .col-md-6 .far{
+    font-size: 50px;
+}
+#caseStudy{
+    background-color: #f4f5f9;
+    line-height: 28px;
+
+}
+.caseArea{
+    background-color: #fff;
+    margin-top: 40px;
+    margin-right: -40px;
+    z-index: 1;
+    padding: 40px;
+    position: relative;
+    min-height: 420px;
+}
+#caseStudy h3{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#caseStudy .fas{
+    font-size: 40px;
+    color: #1886C7;
+    cursor: pointer;
+}
+.caseimage {
+    margin-left: -40px;
+}
+#portfolio .col-md-3{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+#portfolio h4{
+    font-size: 16px;
+    font-weight:300;
+}
+#portfolio .fas{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#portfolio p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.image-container{
+    position: relative;
+    cursor: pointer;
+}
+.image-overlay{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: -50px;
+    height: 100%;
+    width: 100%;
+    background-color: #1886C7;
+    opacity: 0;
+    transition: .5s all ease;
+    overflow: hidden;
+}
+.image-overlay:hover {
+    opacity: .7;
+    top: 0;
+    left: 0;
+}
+.image-text{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#testimonials {
+    background:linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7)
+    ),
+    url(../img/busines-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.quote{
+    color: rgba(24, 134, 199, .6);
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.carousel-item img{
+    opacity: .6;
+}
+.blockquote-footer{
+    color: #1886C7;
+}
+#contact {
+    background-color: #f4f5f9;
+}
+#contact .input-group-text{
+    width: 50px;
+    border-radius: 0;
+    color: #fff;
+    background-color: #1886C7;
+}
+#contact .form-control, #contact .btn{
+    border-radius: 0;
+}
+#mainFooter{
+    color: #fff;
+    background-color:#000;
+}
+
+/* MEDİA QUERY */
+
+@media screen and (max-width: 1200px){
+   #ourHistory p{
+       line-height: 20px;
+   }
+}
+@media screen and (max-width: 992px){
+    .display-3{
+        font-size: 48px;
+    }
+    #ourHistory .btn{
+        position: relative;
+    }
+    .historyLeft,.historyRight{
+        text-align: center;
+    }
+    #ourHistory h2{
+        border: none;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .display-3{
+        font-size: 32px;
+    }
+    .caseimage{
+        margin-left: 0;
+        text-align: center;
+    }
+    .caseArea{
+        margin-right: 0;
+    }
+    
+}
+@media screen and (max-width: 576px){
+    .caseimage{
+        display: none;
+    }
+}
